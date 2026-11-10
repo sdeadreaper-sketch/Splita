@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Splita — Split Expenses. Stay Even.</title>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="x-icon" href="Lines.png">
+</head>
+<script src="//code.tidio.co/qrpquzul4xpskqciwwzqxadmd8v6o1nn.js" async></script>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+
+<nav class="nav">
+
+    <!-- Logo -->
+    <a href="index.html" class="nav-logo">
+        <img src="Untitled design.png" alt="Splita Logo">
+    </a> 
+
+    
+
+
+    <!-- Navigation Links -->
+    <div class="nav-menu" id="navMenu">
+
+        <a href="index.html" class="nav-link active">
+            <i class="bx bx-home"></i>
+            Home
+        </a>
+
+        <a href="/contact/contact.html" class="nav-link">
+            <i class="bx bx-envelope"></i>
+            Contact
+        </a>
+
+        <a href="/services/services.html" class="nav-link">
+            <i class="bx bx-briefcase"></i>
+            Services
+        </a>
+
+            <a href="/about/about.html" class="nav-link">
+        <i class="bx bx-user-circle"></i>
+        About
+    </a>
+    </div>
+
+    
+
+    <!-- Dark / Light Mode -->
+    <div class="theme-toggle" id="themeToggle">
+        <span></span>
+        <i class="bx bx-moon"></i>
+    </div>
+
+    <!-- Mobile Menu -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="bx bx-menu"></i>
+    </button>
+
+</nav>
+
+    <!-- ==================== MAIN BODY ==================== -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <i class='bx bx-sparkles'></i>
+                    Simple. Fair. Stress-free.
+                </div>
+
+                <h1>
+                    Split by what's fair,
+                    <span>not just what's equal.</span>
+                </h1>
+
+                <p>
+                    Splita makes sharing expenses with friends, roommates,
+                    classmates and groups simple. Add expenses, split bills,
+                    and always know who owes whom.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="/rent-splitter/frontend/index.html"  >
+                        <button class="btn btn-primary btn-large"
+                                onclick="location.href='coming.html'" style="border-radius: 5px ;">
+                            Start Splitting
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </a>
+
+                    <a href="#how-it-works" class="btn btn-secondary btn-large">
+                        See How It Works
+                        <i class='bx bx-play-circle'></i>
+                    </a>
+
+                </div>
+
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <i class='bx bx-check-circle'></i>
+                        No complicated calculations
+                    </div>
+
+                    <div class="trust-item">
+                        <i class='bx bx-check-circle'></i>
+                        Easy group expenses
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Expense Preview Card -->
+
+            <div class="hero-visual">
+
+                <div class="dashboard-card">
+
+                    <div class="dashboard-header">
+                        <div>
+                            <span class="small-label">GROUP EXPENSE</span>
+                            <h3>Weekend Trip</h3>
+                        </div>
+
+                        <span class="status">
+                            <i class='bx bx-check'></i>
+                            Settled
+                        </span>
+                    </div>
+
+
+                    <div class="total-expense">
+                        <span>Total expenses</span>
+                        <strong>₹4,850</strong>
+                    </div>
+
+
+                    <div class="people-list">
+
+                        <div class="person">
+                            <div class="person-info">
+                                <div class="avatar avatar-one">A</div>
+                                <div>
+                                    <strong>Anuj</strong>
+                                    <small>Paid ₹2,000</small>
+                                </div>
+                            </div>
+
+                            <span class="positive">+₹787</span>
+                        </div>
+
+
+                        <div class="person">
+                            <div class="person-info">
+                                <div class="avatar avatar-two">R</div>
+                                <div>
+                                    <strong>Rahul</strong>
+                                    <small>Paid ₹1,500</small>
+                                </div>
+                            </div>
+
+                            <span class="negative">−₹425</span>
+                        </div>
+
+
+                        <div class="person">
+                            <div class="person-info">
+                                <div class="avatar avatar-three">S</div>
+                                <div>
+                                    <strong>Simran</strong>
+                                    <small>Paid ₹850</small>
+                                </div>
+                            </div>
+
+                            <span class="negative">−₹787</span>
+                        </div>
+
+
+                        <div class="person">
+                            <div class="person-info">
+                                <div class="avatar avatar-four">K</div>
+                                <div>
+                                    <strong>Karan</strong>
+                                    <small>Paid ₹500</small>
+                                </div>
+                            </div>
+
+                            <span class="positive">+₹425</span>
+                        </div>
+
+                    </div>
+
+
+                    <button class="settle-button">
+                        <i class='bx bx-check-circle'></i>
+                        View settlement
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== FEATURES ==================== -->
+
+        <section class="features section" id="features">
+
+            <div class="section-heading">
+
+                <span class="section-tag">WHY SPLITA?</span>
+
+                <h2>
+                    Expenses shouldn't be
+                    <span>complicated.</span>
+                </h2>
+
+                <p>
+                    Everything you need to keep group expenses organized
+                    without spreadsheets or mental math.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class='bx bx-receipt'></i>
+                    </div>
+
+                    <h3>Fair Expense Splitting</h3>
+
+                    <p>
+                        Automatically calculates each person's 
+                        fair share of rent and shared expenses based on the selected splitting method.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class='bx bx-calculator'></i>
+                    </div>
+
+                    <h3>Automatic calculations</h3>
+
+                    <p>
+                        Let Splita handle the math and instantly calculate
+                        everyone's share.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class='bx bx-group'></i>
+                    </div>
+
+                    <h3>"What if?" Simulator</h3>
+
+                    <p>
+                        Lets users experiment with changes such as adding a roommate, 
+                        changing rent, or increasing income and instantly see the financial impact.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <i class='bx bx-check-shield'></i>
+                    </div>
+
+                    <h3>Know who owes whom</h3>
+
+                    <p>
+                        Clear balances make settling expenses quick,
+                        transparent and stress-free.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== HOW IT WORKS ==================== -->
+
+        <section class="how-it-works section" id="how-it-works">
+
+            <div class="section-heading">
+
+                <span class="section-tag">HOW IT WORKS</span>
+
+                <h2>
+                    Three steps.
+                    <span>That's it.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">01</div>
+
+                    <div class="step-icon">
+                        <i class='bx bx-receipt'></i>
+                    </div>
+
+                    <h3>Add an expense</h3>
+
+                    <p>
+                        Enter what you paid and add the people involved.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step">
+
+                    <div class="step-number">02</div>
+
+                    <div class="step-icon">
+                        <i class='bx bx-git-compare'></i>
+                    </div>
+
+                    <h3>Split the bill</h3>
+
+                    <p>
+                        Splita automatically works out everyone's share.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step">
+
+                    <div class="step-number">03</div>
+
+                    <div class="step-icon">
+                        <i class='bx bx-check-circle'></i>
+                    </div>
+
+                    <h3>Settle up</h3>
+
+                    <p>
+                        See exactly who needs to pay whom and settle up.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== CTA ==================== -->
+
+        <section class="cta">
+
+            <div class="cta-content">
+
+                <span class="section-tag">READY?</span>
+
+                <h2>
+                    Stop doing the math.
+                    <br>
+                    <span>Start splitting.</span>
+                </h2>
+
+                <p>
+                    Make group expenses simple with Splita.
+                </p>
+
+                <a href="/rent-splitter/frontend/index.html">
+                <span class="btn btn-primary btn-large" style="border-radius: 5px ;">
+                    Get Started
+                    <i class='bx bx-right-arrow-alt'></i>
+                </span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="footer" id="contact">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-mark">
+                        <i class='bx bx-git-branch'></i>
+                    </span>
+
+                    <span class="logo-text">Splita</span>
+                </a>
+
+                <p>
+                    Making shared expenses simple,
+                    fair and stress-free.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#">Pricing</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="/about/about.html">About</a>
+                    <a href="/contact/contact.html">Contact</a>
+                    <a href="/contact/contact.html">Help</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-hackathon">
+            <p>
+                🚀 This website is built by <strong>Team SD111</strong> as part of a Hackathon Project.
+                Splita is a demo/prototype application created for hackathon evaluation purposes and
+                is not intended for commercial use. All data entered is for demonstration only.
+            </p>
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="year"></span> Splita. Built by Team SD111 for Hackathon. All rights reserved.
+            </p>
+
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

@@ -1,0 +1,809 @@
+/* =========================================
+   GLOBAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000000;
+
+    color: #eeeeee;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* ==================== NAVIGATION BAR ==================== */
+
+.nav {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 42px;
+
+    background: #040404;
+
+    border: 1px solid #242525;
+    border-radius: 20px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ==================== LOGO ==================== */
+
+.nav-logo {
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+
+.nav {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 42px;
+
+    background: #040404;
+
+    border: 1px solid #242525;
+    border-radius: 20px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.nav-logo {
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   NAV MENU
+   ========================================================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    margin-left: 50px;
+}
+
+
+/* =========================================================
+   NAV LINKS
+   ========================================================= */
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #a6a6a6;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    padding: 11px 16px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+
+/* Icons */
+
+.nav-link i {
+    color: #999999;
+
+    font-size: 21px;
+
+    transition: all 0.25s ease;
+}
+
+
+/* Hover */
+
+.nav-link:hover {
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    transform: translateY(-1px);
+}
+
+.nav-link:hover i {
+    color: #d8c28e;
+
+    transform: scale(1.06);
+}
+
+
+/* Active */
+
+.nav-link.active {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 255, 255, 0.035)
+        );
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+.nav-link.active i {
+    color: #d8c28e;
+}
+
+
+/* =========================================================
+   THEME TOGGLE
+   ========================================================= */
+
+.theme-toggle {
+    margin-left: auto;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 50%;
+    border: 1px solid transparent;
+
+    background: transparent;
+
+    color: #eeeeee;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.theme-toggle i {
+    color: #eeeeee;
+
+    font-size: 26px;
+
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(216, 194, 142, 0.08);
+
+    border-color: rgba(216, 194, 142, 0.20);
+}
+
+.theme-toggle:hover i {
+    color: #d8c28e;
+
+    transform: rotate(20deg);
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+.menu-toggle {
+    display: none;
+
+    margin-left: 35px;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+/* =========================================
+   MAIN PAGE
+   ========================================= */
+
+.services-page {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 85px 35px 110px;
+}
+
+
+/* =========================================
+   INTRO
+   ========================================= */
+
+.services-intro {
+    max-width: 750px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+
+.section-label {
+    margin-bottom: 18px;
+
+    color: #d4b36c;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.services-intro h1 {
+    margin-bottom: 22px;
+
+    color: #e7e7e7;
+
+    font-size: 56px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+
+.services-intro h1 span {
+    color: #777777;
+}
+
+
+.intro-text {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #686868;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   SERVICES GRID
+   ========================================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   SERVICE CARD
+   ========================================= */
+
+.service-card {
+    min-height: 300px;
+
+    padding: 30px;
+
+    border: 1px solid #303030;
+
+    border-radius: 5px;
+
+    background: #080a0c;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.service-card:hover {
+    border-color: #555555;
+
+    transform: translateY(-4px);
+}
+
+
+/* TOP */
+
+.service-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+
+.service-number {
+    color: #555555;
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ICON */
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #343434;
+
+    border-radius: 10px;
+
+    background: #f0f0f0;
+
+    color: #8d8d8d;
+
+    font-size: 21px;
+}
+
+
+/* TITLE */
+
+.service-card h2 {
+    margin-bottom: 13px;
+
+    color: #d0d0d0;
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+/* DESCRIPTION */
+
+.service-card p {
+    max-width: 430px;
+
+    color: #676767;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* LINK */
+
+.service-link {
+    margin-top: auto;
+
+    padding-top: 25px;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.service-link span {
+    margin-left: 5px;
+
+    color: #d4b36c;
+
+    font-size: 17px;
+}
+
+.service-link:hover {
+    color: #eeeeee;
+}
+
+
+/* =========================================
+   WORKFLOW
+   ========================================= */
+
+.workflow {
+    margin-top: 110px;
+
+    padding-top: 80px;
+
+    border-top: 1px solid #202020;
+}
+
+
+.workflow-heading {
+    text-align: center;
+
+    margin-bottom: 65px;
+}
+
+
+.workflow-heading h2 {
+    color: #d8d8d8;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.workflow-heading h2 span {
+    color: #666666;
+}
+
+
+/* =========================================
+   WORKFLOW STEPS
+   ========================================= */
+
+.workflow-line {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.workflow-step {
+    position: relative;
+
+    padding-right: 20px;
+}
+
+
+.step-number {
+    margin-bottom: 22px;
+
+    color: #d4b36c;
+
+    font-family: Georgia, serif;
+
+    font-size: 14px;
+}
+
+
+.workflow-step h3 {
+    margin-bottom: 10px;
+
+    color: #d0d0d0;
+
+    font-size: 17px;
+}
+
+
+.workflow-step p {
+    color: #626262;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.services-cta {
+    margin-top: 110px;
+
+    padding: 65px 30px;
+
+    border: 1px solid #292929;
+
+    border-radius: 5px;
+
+    background: #080a0c;
+
+    text-align: center;
+}
+
+
+.services-cta > p {
+    margin-bottom: 17px;
+
+    color: #d4b36c;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.services-cta h2 {
+    margin-bottom: 30px;
+
+    color: #dedede;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+}
+
+
+.services-cta h2 span {
+    color: #666666;
+}
+
+
+/* CTA BUTTON */
+
+.cta-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px 25px;
+
+    border-radius: 8px;
+
+    background: #eeeeee;
+
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+
+.cta-button span {
+    font-size: 18px;
+}
+
+
+.cta-button:hover {
+    background: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+
+    .logo {
+        width: 160px;
+    }
+
+
+    .nav-links a {
+        padding: 13px 10px;
+
+        font-size: 14px;
+    }
+
+
+    .services-page {
+        padding: 65px 25px 90px;
+    }
+
+
+    .services-intro h1 {
+        font-size: 48px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+
+        min-height: 75px;
+
+        padding: 15px 18px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .nav-links {
+        order: 3;
+
+        width: 100%;
+
+        overflow-x: auto;
+    }
+
+
+    .nav-links a {
+        white-space: nowrap;
+    }
+
+
+    .services-page {
+        padding: 55px 18px 75px;
+    }
+
+
+    .services-intro {
+        margin-bottom: 50px;
+    }
+
+
+    .services-intro h1 {
+        font-size: 40px;
+    }
+
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-card {
+        min-height: 270px;
+
+        padding: 25px;
+    }
+
+
+    .workflow {
+        margin-top: 80px;
+
+        padding-top: 60px;
+    }
+
+
+    .workflow-heading h2 {
+        font-size: 31px;
+    }
+
+
+    .workflow-line {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px 25px;
+    }
+
+
+    .services-cta {
+        margin-top: 80px;
+
+        padding: 50px 20px;
+    }
+
+
+    .services-cta h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 450px) {
+
+    .workflow-line {
+        grid-template-columns: 1fr;
+    }
+
+
+    .services-intro h1 {
+        font-size: 35px;
+    }
+
+}

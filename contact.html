@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Splita — Contact</title>
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<script src="//code.tidio.co/qrpquzul4xpskqciwwzqxadmd8v6o1nn.js" async></script>
+<body>
+
+     <!-- ==================== NAVIGATION BAR ==================== -->
+
+<nav class="nav">
+
+    <!-- Logo -->
+    <a href="/index.html" class="nav-logo">
+        <img src="/Untitled design.png" alt="Splita Logo">
+    </a>
+
+    <!-- Navigation Links -->
+    <div class="nav-menu" id="navMenu">
+
+        <a href="/index.html" class="nav-link">
+            <i class="bx bx-home"></i>
+            Home
+        </a>
+
+        <a href="/contact/contact.html" class="nav-link active">
+            <i class="bx bx-envelope"></i>
+            Contact
+        </a>
+
+        <a href="/services/services.html" class="nav-link">
+            <i class="bx bx-briefcase"></i>
+            Services
+        </a>
+
+         <a href="/about/about.html" class="nav-link">
+       <i class="bx bx-user-circle"></i>
+    About
+</a>
+
+    </div>
+
+    
+
+    <!-- Dark / Light Mode -->
+    <div class="theme-toggle" id="themeToggle">
+        <span></span>
+        <i class="bx bx-moon"></i>
+    </div>
+
+    <!-- Mobile Menu -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="bx bx-menu"></i>
+    </button>
+
+</nav>
+
+
+    <!-- CONTACT SECTION -->
+
+    <main class="contact-page">
+
+        <section class="contact-intro">
+
+            <p class="small-heading">
+                GET IN TOUCH
+            </p>
+
+            <h1>
+                Let's talk about
+                <span>Splita.</span>
+            </h1>
+
+            <p class="contact-description">
+                Have a question, suggestion, or found something
+                that could make Splita better? Send us a message.
+                We'd love to hear from you.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT CONTENT -->
+
+        <section class="contact-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="contact-info">
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        ✉
+                    </div>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>hello@splita.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        ?
+                    </div>
+
+                    <div>
+                        <h3>Need help?</h3>
+                        <p>
+                            Tell us what you're having trouble with
+                            and we'll help you out.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <h3>Feedback</h3>
+                        <p>
+                            Your feedback helps us make expense
+                            splitting simpler for everyone.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE FORM -->
+
+            <div class="contact-form-card">
+
+                <h2>Send us a message</h2>
+
+                <p class="form-subtitle">
+                    Fill in the details below and we'll get back to you.
+                </p>
+
+
+                <form id="contactForm">
+
+                    <input type="hidden" name="access_key" value="d60692ee-d587-4ecf-94c3-8965314688a3">
+                    <input type="hidden" name="from_name" value="Splita Contact Form">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What is this about?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Tell us what's on your mind..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="send-btn"
+                    >
+                        Send Message
+                        <span>→</span>
+                    </button>
+
+                    <p
+                        id="formMessage"
+                        class="form-message"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector('.send-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            formMessage.textContent = '';
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    formMessage.textContent = 'Message sent! We\'ll get back to you soon.';
+                    formMessage.style.color = 'green';
+                    contactForm.reset();
+                } else {
+                    formMessage.textContent = data.message || 'Something went wrong. Please try again.';
+                    formMessage.style.color = 'red';
+                }
+            } catch (error) {
+                formMessage.textContent = 'Network error. Please try again.';
+                formMessage.style.color = 'red';
+            } finally {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
+
+    
+
+</body>
+
+</html>
